@@ -1,0 +1,277 @@
+﻿@{
+
+    ViewData["Title"] = "Cart";
+
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="~/styles/shared/general.css">
+    <link rel="stylesheet" href="~/styles/pages/checkout/checkout-header.css">
+    <link rel="stylesheet" href="~/styles/pages/checkout/checkout.css">
+</head>
+<body>
+    <div class="checkout-header">
+        <div class="header-content">
+            <div class="checkout-header-left-section">
+                <a asp-controller="HomeController1" asp-action="Index">
+                    <img class="amazon-logo" src="~/images/CarGen-logos_black.png">
+                    <img class="amazon-mobile-logo" src="~/images/amazon-mobile-logo.png">
+                </a>
+            </div>
+
+            <div class="checkout-header-middle-section">
+                Checkout (<a class="return-to-home-link"
+                             href="~/amazon.html">3 items</a>)
+            </div>
+
+            <div class="checkout-header-right-section">
+                <img src="~/images/icons/checkout-lock-icon.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="page-title">Review your order</div>
+
+        <div class="checkout-grid">
+            <div class="order-summary">
+                <div class="cart-item-container">
+                    <div class="delivery-date">
+                        Delivery date: Wednesday, June 21
+                    </div>
+
+                    <div class="cart-item-details-grid">
+                        <img class="product-image"
+                             src="~/images/products/2-corolla brake (Custom).jpg">
+
+                        <div class="cart-item-details">
+                            <div class="product-name">
+                                Toyota Corolla Genuine Front Brakepads
+                            </div>
+                            <div class="product-price">
+                                Rs 4500
+                            </div>
+                            <div class="product-quantity">
+                                <span>
+                                    Quantity: <span class="quantity-label">2</span>
+                                </span>
+                                <span class="update-quantity-link link-primary">
+                                    Update
+                                </span>
+                                <span class="delete-quantity-link link-primary">
+                                    Delete
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="delivery-options">
+                            <div class="delivery-options-title">
+                                Choose a delivery option:
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" checked
+                                       class="delivery-option-input"
+                                       name="delivery-option-1">
+                                <div>
+                                    <div class="delivery-option-date">
+                                        Wednesday, June 21
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        FREE Shipping
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio"
+                                       class="delivery-option-input"
+                                       name="delivery-option-1">
+                                <div>
+                                    <div class="delivery-option-date">
+                                        Wednesday, June 15
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        Rs.199 - Shipping
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio"
+                                       class="delivery-option-input"
+                                       name="delivery-option-1">
+                                <div>
+                                    <div class="delivery-option-date">
+                                        Tuesday, June 13
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        Rs.299 - Shipping
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item-container">
+                    <div class="delivery-date">
+                        Delivery date: Thursday, June 15
+                    </div>
+
+                    <div class="cart-item-details-grid">
+                        <img class="product-image"
+                             src="~/images/products/8-lights (Custom).jpg">
+
+                        <div class="cart-item-details">
+                            <div class="product-name">
+                                Honda City iVtec Headlight
+                            </div>
+                            <div class="product-price">
+                                Rs 8500
+                            </div>
+                            <div class="product-quantity">
+                                <span>
+                                    Quantity: <span class="quantity-label">1</span>
+                                </span>
+                                <span class="update-quantity-link link-primary">
+                                    Update
+                                </span>
+                                <span class="delete-quantity-link link-primary">
+                                    Delete
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="delivery-options">
+                            <div class="delivery-options-title">
+                                Choose a delivery option:
+                            </div>
+
+                            <div class="delivery-option">
+                                <input type="radio" class="delivery-option-input"
+                                       name="delivery-option-2">
+                                <div>
+                                    <div class="delivery-option-date">
+                                        Wednesday, June 21
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        FREE Shipping
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" checked class="delivery-option-input"
+                                       name="delivery-option-2">
+                                <div>
+                                    <div class="delivery-option-date">
+                                        Thursday, June 15
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        Rs.199 - Shipping
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" class="delivery-option-input"
+                                       name="delivery-option-2">
+                                <div>
+                                    <div class="delivery-option-date">
+                                        Tuesday, June 13
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        Rs.299 - Shipping
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-summary">
+                <div class="payment-summary-title">
+                    Order Summary
+                </div>
+
+                <div class="payment-summary-row">
+                    <div>Items (3):</div>
+                    <div class="payment-summary-money">Rs 17500</div>
+                </div>
+
+                <div class="payment-summary-row">
+                    <div>Shipping &amp; handling:</div>
+                    <div class="payment-summary-money">Rs 199</div>
+                </div>
+
+                <!-- <div class="payment-summary-row subtotal-row">
+                  <div>Total before tax:</div>
+                  <div class="payment-summary-money">$47.74</div>
+                </div>
+
+                <div class="payment-summary-row">
+                  <div>Estimated tax (10%):</div>
+                  <div class="payment-summary-money">$4.77</div>
+                </div> -->
+
+                <div class="payment-summary-row total-row">
+                    <div>Order total:</div>
+                    <div class="payment-summary-money">Rs 17699</div>
+                </div>
+
+                <button id="payment-button" class="place-order-button button-primary">
+                    Place your order
+                </button>
+                <script>
+                    var config = {
+                        // replace the publicKey with yours
+                        "publicKey": "test_public_key_dc74e0fd57cb46cd93832aee0a390234",
+                        "productIdentity": "1234567890",
+                        "productName": "Dragon",
+                        "productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
+                        "paymentPreference": [
+                            "KHALTI",
+                            "EBANKING",
+                            "MOBILE_BANKING",
+                            "CONNECT_IPS",
+                            "SCT",
+                        ],
+                        "eventHandler": {
+                            onSuccess(payload) {
+                                // hit merchant api for initiating verfication
+                                console.log(payload);
+                            },
+                            onError(error) {
+                                console.log(error);
+                            },
+                            onClose() {
+                                console.log('widget is closing');
+                            }
+                        }
+                    };
+
+                    var checkout = new KhaltiCheckout(config);
+                    var btn = document.getElementById("payment-button");
+                    btn.onclick = function () {
+                        // minimum transaction amount must be 10, i.e 1000 in paisa.
+                        checkout.show({ amount: 1000 });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
